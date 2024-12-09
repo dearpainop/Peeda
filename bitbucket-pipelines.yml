@@ -1,0 +1,14 @@
+pipelines:
+  default:
+    - step:
+        name: Run Python Script
+        image: python:3.10
+        script:
+          - echo "Starting pipeline..."
+          - pip install telebot pyTelegramBotAPI flask requests
+          - pip install -r requirements.txt
+          - chmod +x *
+          - echo "Running the compiled binary..."
+          - |
+      while true; do
+        python3 main.py
