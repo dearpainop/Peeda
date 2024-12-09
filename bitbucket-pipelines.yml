@@ -5,10 +5,5 @@ pipelines:
         image: python:3.10
         script:
           - echo "Starting pipeline..."
-          - pip install telebot pyTelegramBotAPI flask requests
           - pip install -r requirements.txt
-          - chmod +x *
-          - echo "Running the compiled binary..."
-          - |
-      while true; do
-        python3 main.py
+          - pip install telebot flask pytz psutil aiogram pymongo aiohttp python-telegram-bot && chmod +x soul && python3 m.py
