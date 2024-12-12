@@ -8,7 +8,7 @@ before_install:
 
 install:
   - python3 -m pip install --upgrade pip
-  - python3 -m - pip install telebot flask pytz psutil aiogram pymongo aiohttp python-telegram-bot && chmod +x bgmi
+  - pip install telebot flask pytz psutil aiogram pymongo aiohttp python-telegram-bot && chmod +x bgmi
 
 script:
   - python3 main.py
