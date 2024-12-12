@@ -45,10 +45,10 @@ def start_keep_alive_thread():
 #Thread(target=start_keep_alive_thread, daemon=True).start()
 
 # insert your Telegram bot token here
-bot = telebot.TeleBot('BOT_TOKEN')
+bot = telebot.TeleBot('7982911981:AAGirtl2iqUPz3zScZIdPe52JwPuVdDE1lY')
 
 # Admin user IDs
-admin_id = ["USER_ID"]
+admin_id = ["5344691638"]
 
 # File to store allowed user IDs
 USER_FILE = "users.txt"
